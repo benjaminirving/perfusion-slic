@@ -1,0 +1,11 @@
+# Put explicitly here but this happens automatically if no specific url is given
+--index-url https://pypi.python.org/simple/
+
+numpy
+nibabel
+matplotlib
+h5py
+scipy
+Cython
+scikit-image
+scikit-learn

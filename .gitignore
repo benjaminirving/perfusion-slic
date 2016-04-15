@@ -1,0 +1,8 @@
+# Created by .gitignore support plugin (hsz.mobi)
+*.so
+*.c
+
+# Specific files
+slic_regions.nii
+saved_animation.gif
+*.mat

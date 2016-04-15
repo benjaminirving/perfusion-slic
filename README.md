@@ -41,6 +41,7 @@ Build Cython extensions of the library in the current location using:
 
 ```bash
 python setup.py build_ext --inplace
+python perfusion_slic_demo.py
 ```
 
 Option 2) Install in your python directory

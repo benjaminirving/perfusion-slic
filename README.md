@@ -7,7 +7,6 @@ For research purposes only.
 
 **References**
 
-
 *Irving, B; Franklin, JM; Papiez, BW; Anderson, EM; Sharma, RA; Gleeson, FV; Brady, M; and Schnabel, JA. Pieces-of-parts
  for supervoxel segmentation with global context: Application to DCE-MRI tumour delineation. 
  Journal of Medical Image Analysis 2016 (accepted).*
@@ -84,11 +83,12 @@ of breast cancer therapy response: a multicenter data analysis challenge.  Trans
 PubMed Central PMCID: PMC3998693_
 
 ### Acknowledgements
-This research is funded by...
+
 
 ### TODO: 
 
 1) Quite memory intensive for large volumes
 
+Please contact me for any corrections or improvements
 
 _Benjamin Irving (20141124)_

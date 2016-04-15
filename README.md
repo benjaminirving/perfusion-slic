@@ -1,5 +1,5 @@
 # Perfusion-SLIC
-A small library to extracted supervoxels based on enhancement curves of perfusion images using principal component analysis. 
+A small library to extract supervoxels based on enhancement curves of perfusion images using principal component analysis. 
 This method extends the standard SLIC implementation of scitkit-image 
 (http://scikit-image.org/docs/dev/api/skimage.segmentation.html). 
 
@@ -41,7 +41,6 @@ Build Cython extensions of the library in the current location using:
 
 ```bash
 python setup.py build_ext --inplace
-python perfusion_slic_demo.py
 ```
 
 Option 2) Install in your python directory
@@ -52,9 +51,7 @@ pip install dist/perfusionslic-0.20-cp27-cp27mu-linux_x86_64.whl
 
 ### Demo
 
-Download the .mat example QIN breast DCE-MRI data from: 
-
-https://www.dropbox.com/s/318tv1a73igr1gu/QIN-Breast-DCE-MRI-BC10-V1.mat?dl=1
+Download the .mat example QIN breast DCE-MRI data from under *releases* and copy to the folder. 
 
 Run the demo script
 ```bash
@@ -74,7 +71,7 @@ From:
 https://wiki.cancerimagingarchive.net/display/Public/QIN+Breast+DCE-MRI
 
 Licence: CC BY 3.0
-(https://wiki.cancerimagingarchive.net/display/Public/Data+Usage+Policies+and+Restrictions)
+(http://creativecommons.org/licenses/by/3.0/)
 
 *Reference*:
 _Huang W, Li X, Chen Y, Li X, Chang MC, Oborski MJ, Malyarenko DI, Muzi M, Jajamovich GH, Fedorov A, Tudorica A, Gupta SN, 

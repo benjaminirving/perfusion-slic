@@ -1,5 +1,5 @@
 # Perfusion-SLIC
-A small library to extract supervoxels based on enhancement curves of perfusion images using principal component analysis. 
+A small library to extract supervoxels based on enhancement curves of perfusion images (such as DCE-MRI or pCT) using principal component analysis. 
 This method extends the standard SLIC implementation of scitkit-image 
 (http://scikit-image.org/docs/dev/api/skimage.segmentation.html). 
 

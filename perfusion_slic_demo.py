@@ -70,14 +70,14 @@ vox_size = np.around([PixelSpacing[0], PixelSpacing[1], SliceThickness[0]])
 img1 = np.transpose(img, [3, 2, 1, 0])
 
 # Load reconstructed roi
-f2 = h5py.File('QIN-Breast-DCE-MRI-BC10-V1roi.mat', 'r')
-roi = f2.get('roi1')
-roi1 = np.transpose(roi, [2, 1, 0])
+# f2 = h5py.File('QIN-Breast-DCE-MRI-BC10-V1roi.mat', 'r')
+# roi = f2.get('roi1')
+# roi1 = np.transpose(roi, [2, 1, 0])
 
 # Select a sub-region containing tumour (for speed and memory reasons)
 
 img1 = img1[20:160, 35:180, :, :]
-roi1 = roi1[20:160, 35:180, :]
+# roi1 = roi1[20:160, 35:180, :]
 
 # ~~~~~~~~~~~~~~~~~~ Running Perfusion SLIC ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

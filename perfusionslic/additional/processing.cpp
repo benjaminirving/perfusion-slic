@@ -4,13 +4,16 @@
 {
     "distutils": {
         "depends": [
+            "/home/ENG/engs1170/python-vm/python34/lib/python3.4/site-packages/numpy/core/include/numpy/arrayobject.h",
+            "/home/ENG/engs1170/python-vm/python34/lib/python3.4/site-packages/numpy/core/include/numpy/ufuncobject.h",
             "src/processing.h"
         ],
         "extra_compile_args": [
             "-std=c++11"
         ],
         "include_dirs": [
-            "src"
+            "src",
+            "/home/ENG/engs1170/python-vm/python34/lib/python3.4/site-packages/numpy/core/include"
         ],
         "language": "c++"
     }

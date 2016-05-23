@@ -17,19 +17,27 @@ from setuptools import setup
 from setuptools import Extension
 from Cython.Build import cythonize
 
+import numpy
+
 
 Description = """/
 Perfusion SLIC
 """
 
 extensions = [
-    Extension("perfusionslic.additional.bspline_smoothing", sources=["perfusionslic/additional/bspline_smoothing.pyx"]),
-    Extension("perfusionslic.additional.create_im", sources=["perfusionslic/additional/create_im.pyx"]),
-    Extension("perfusionslic._slic_feat", sources=["perfusionslic/_slic_feat.pyx"]),
+    Extension("perfusionslic.additional.bspline_smoothing",
+              sources=["perfusionslic/additional/bspline_smoothing.pyx"],
+              include_dirs=[numpy.get_include()]),
+    Extension("perfusionslic.additional.create_im",
+              sources=["perfusionslic/additional/create_im.pyx"],
+              include_dirs=[numpy.get_include()]),
+    Extension("perfusionslic._slic_feat",
+              sources=["perfusionslic/_slic_feat.pyx"],
+              include_dirs=[numpy.get_include()]),
     Extension("perfusionslic.additional.processing",
               sources=["perfusionslic/additional/processing.pyx",
                        "src/processing.cpp"],
-              include_dirs=["src"],
+              include_dirs=["src", numpy.get_include()],
               language="c++",
               extra_compile_args=["-std=c++11"])
 ]

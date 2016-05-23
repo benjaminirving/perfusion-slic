@@ -360,9 +360,9 @@ def _find_adjacency_map(int[:, :, ::1] segments):
     width = segments.shape[2]
 
     # neighborhood arrays (Py_ssize_t is the proper python definition for array indices)
-    cdef Py_ssize_t[::1] ddx = np.array((1, -1, 0, 0, 0, 0))
-    cdef Py_ssize_t[::1] ddy = np.array((0, 0, 1, -1, 0, 0))
-    cdef Py_ssize_t[::1] ddz = np.array((0, 0, 0, 0, 1, -1))
+    cdef Py_ssize_t[::1] ddx = np.array((1, -1, 0, 0, 0, 0), dtype=np.intp)
+    cdef Py_ssize_t[::1] ddy = np.array((0, 0, 1, -1, 0, 0), dtype=np.intp)
+    cdef Py_ssize_t[::1] ddz = np.array((0, 0, 0, 0, 1, -1), dtype=np.intp)
 
     cdef Py_ssize_t zz, yy, xx
     cdef Py_ssize_t z, y, x
@@ -420,9 +420,9 @@ def _find_adjacency_map_mask(np.ndarray[np.int32_t, ndim=3] segmentsnp):
     width = segmentsnp.shape[2]
 
     # neighborhood arrays (Py_ssize_t is the proper python definition for array indices)
-    cdef Py_ssize_t[::1] ddx = np.array((1, -1, 0, 0, 0, 0))
-    cdef Py_ssize_t[::1] ddy = np.array((0, 0, 1, -1, 0, 0))
-    cdef Py_ssize_t[::1] ddz = np.array((0, 0, 0, 0, 1, -1))
+    cdef Py_ssize_t[::1] ddx = np.array((1, -1, 0, 0, 0, 0), dtype=np.intp)
+    cdef Py_ssize_t[::1] ddy = np.array((0, 0, 1, -1, 0, 0), dtype=np.intp)
+    cdef Py_ssize_t[::1] ddz = np.array((0, 0, 0, 0, 1, -1), dtype=np.intp)
 
     cdef Py_ssize_t zz, yy, xx
     cdef Py_ssize_t z, y, x

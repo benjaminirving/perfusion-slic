@@ -39,7 +39,6 @@ import nibabel as nib
 from time import time
 from perfusionslic import PerfSLIC
 import h5py
-
 start1 = time()
 
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Load Nifti data ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
